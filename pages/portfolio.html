@@ -3,17 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <head>
-        <nav id="nav" class="nav">
-            <a href="./index.html">Inicio</a>
-            <a href="./biografia.html">Biografía</a>
-            <a href="./contacto.html">Contacto</a>
-        </nav>
-    </head>
     <h1>Portfolio</h1>
+
+    <div id="list" class="list">
+        <ul>
+            <a href="./index.html">Inicio</a><br>
+            <a href="./biografia.html">Biografía</a><br>
+            <a href="./contacto.html">Contacto</a><br>
+        </ul>
+    </div>
+    <br>
+    <div id="fondo" class="fondo"> 
+        <h2>Ejemplos de trabajos</h2>
+
+        <div id="images" class="multi">
+            <h3>Responsive</h3>
+            <div id="resp" class="resp">
+                <img src="../multimedia/resp1.jpg" alt="Responsive 1" height="200px"><br>
+                <img src="../multimedia/resp2.jpg" alt="Responsive 2" height="200px">
+                <img src="../multimedia/resp3.jpg" alt="Responsive 3" height="200px">
+            </div>
+        </div>
+
+        <div id="video" class="multi">
+            <h3>Get Rick Astley'd</h3>
+            <video width="320" height="240" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </div>
+
+        <div id="audio" class="multi">
+            <h3>Audio</h3>
+            <audio controls>
+            <source src="../multimedia/nggyu.mp3" type="audio/mpeg">
+        </div>
+        <br>
+    </div>
+    <br><br><br><br><br><br>
+    <footer>
+        <div>Avenida Blasco Ibáñez, 110</div> <div>Valencia, España</div>
+    </footer>
 </body>
 </html>
