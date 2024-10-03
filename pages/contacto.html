@@ -11,18 +11,55 @@
 
     <div id="list" class="list">
         <ul>
-            <a href="./index.html">Inicio</a><br>
-            <a href="./biografia.html">Biografía</a><br>
-            <a href="./portfolio.html">Portfolio</a><br>
+            <a href="./index.html" title="Inicio">Inicio</a><br>
+            <a href="./biografia.html" title="Biografía">Biografía</a><br>
+            <a href="./portfolio.html" title="Portfolio">Portfolio</a><br>
         </ul>
     </div>
 
     <div id="fondo" class="fondo"> 
-        <h2>Formulario</h2>
-        
+        <form>
+            <div class="form">
+                <h2>¿Quién eres?</h2>
+
+                <label for="nombre">Nombre</label> <br>
+                <input type="text" name="nombre" id="nombre" autofocus placeholder="Ingresa tu nombre" required> <br>
+
+                <label for="apellidos">Apellidos</label> <br>
+                <input type="text" name="apellidos" id="apellidos" placeholder="Ingresa tus apellidos"  required> <br>
+
+                <label for="edad">Edad</label> <br>
+                <input type="number" name="edad" id="edad" placeholder="Edad" min="18" max="120" required><br>
+            </div>
+            <br>
+            <div class="form">
+                    <label for="genero">Género:</label> <br>
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" name="sexo" id="masculino" value="Masculino" required><br>
+                    <label for="femenino">Femenino</label>
+                    <input type="radio" name="sexo" id="femenino" value="Femenino"><br>
+                    <label for="otro">Otro</label>
+                    <input type="radio" name="sexo" id="otro" value="Otro"><br>
+                <br>
+                <label for="info">Cuéntanos algo sobre tí:</label><br>
+                <textarea name="info" id="info" rows="10" placeholder="Cosas sobre mí..." maxlength="400"></textarea><br><br>
+            </div>
+            <br>
+            <div class="form">
+                <label for="email">Correo electrónico</label><br>
+                <input type="email" placeholder="Correo electrónico" required>
+
+                <br>
+
+                <label for="tel">Número de teléfono</label><br>
+                <input type="tel" name="tel" id="tel" placeholder="Número de teléfono" required pattern="[6-9][0-9]{8}"><br>
+
+                <input type="reset" class="buttons" name="reset" id="reset">
+                <input type="submit" class="buttons" value="Enviar">
+            </div>
+        </form>
     </div>
     
-    <br><br><br><br>
     <footer>
         <div>Xavier Antúnez Muñoz</div> <div>Programación Web Full Stack</div>
     </footer>

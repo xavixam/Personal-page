@@ -1,3 +1,7 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
     width: 99%;
 	height: 100%;
@@ -6,12 +10,6 @@ body {
 	background-size: 400% 400%;
 	position: relative;
 	animation: cambiar 10s ease-in-out infinite;
-}
-
-@keyframes cambiar{
-    0%{background-position: 0 50%;}
-    50%{background-position: 100% 50%;}
-    100%{background-position: 0 50%;}
 }
 
 h1 {
@@ -64,6 +62,36 @@ a:link {
 	justify-content: space-around;
 }
 
+#ambas {
+	display: flex;
+	justify-content: space-around;
+}
+
+.form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 40px;
+	background-color: rgba(152, 163, 130, .3);
+	padding: 20px;
+	margin: 10px;
+}
+
+textarea, input[type="text"], input[type="number"], input[type="email"], input[type="tel"] {
+    border-radius: 5px;
+	resize: none;
+	font-size: 20px;
+}
+
+.buttons {
+	background-color: rgb(20, 101, 101);
+	padding: 10px;
+	margin: 10px;
+	font-size: 20px;
+	border-radius: 20px;
+}
+
 .fondo {
 	display: flex;
 	align-items: center;
@@ -72,19 +100,26 @@ a:link {
 	border-radius: 20px;
 	background-color: rgba(55, 82, 1, .4);
 	font-size: larger;
-	margin-left: 20%;
-	margin-right: 20%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 7%;
 }
 
 footer {
-	width: 96%;
+	width: 95%;
 	bottom: 0;
 	position: fixed;
 	display: flex;
 	align-items: flex-end;
 	align-content: center;
 	justify-content: space-around;
-	background-color: black;
+	background-color: rgba(0, 0, 0, 0.6);
 	padding: 30px;
 	border-radius: 10px;
+}
+
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
 }
